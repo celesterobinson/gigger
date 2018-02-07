@@ -7,7 +7,7 @@ const gigReducer = (prevState = { loading: true, data: [] }, action) => {
                 loading: false,
                 data: [...prevState.data, action.data]
             }
-        case "GET_GIG":
+        case "POST_GIG":
             return {
                 loading: false,
                 data: action.data
@@ -65,7 +65,7 @@ export const getGig = () => {
     }
 }
 
-export const updateGig = () => {
+export const updateGig = (updatedGig, id) => {
     return dispatch => {
         axios.put(gigUrl + id, updatedGig)
             .then((response) => {

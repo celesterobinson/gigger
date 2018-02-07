@@ -4,7 +4,7 @@ import gig from "./gig";
 
 const rootReducer = (combineReducers({ gig }));
 
-let store = createStore(rootReducer, applyMiddle(thunk));
+let store = createStore(rootReducer, applyMiddleware(thunk));
 
 store.subscribe(() => {
     console.log(store.getState());
