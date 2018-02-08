@@ -1,7 +1,7 @@
 .header {
     display: flex;
     width: 100%;
-    background-color: #222;
+    background-color: #00171F;
     color: white;
     height: 67px;
     align-items: center;
@@ -25,7 +25,7 @@
     font-family: helvetica, serif;
     font-style: italic;
     font-weight: 100;
-    color: #2071d5;   
+    color: #00A8E8;   
 }
 @media(max-width: 494px) {
     .sub-title {

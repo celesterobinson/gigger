@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Calendar from "react-calendar";
 import Header from "./Header";
 import Form from "./shared/Form";
+import GigList from "./GigList";
 import "./styles/App.css";
 
 class App extends Component {
@@ -10,7 +11,6 @@ class App extends Component {
     }
     onChange = date => this.setState({ date })
     render() {
-        console.log(this.state.date);
         return (
             <div className="app-wrapper">
                 <Header />
@@ -20,7 +20,8 @@ class App extends Component {
                 <div className="arrow">
                     <p><i className="down"></i></p>
                 </div>
-                <Form />
+                <Form add clear/>
+                <GigList />
             </div>
         )
     }

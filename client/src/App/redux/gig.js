@@ -2,12 +2,12 @@ import axios from "axios";
 
 const gigReducer = (prevState = { loading: true, data: [] }, action) => {
     switch (action.type) {
-        case "GET_GIG":
+        case "POST_GIG":
             return {
                 loading: false,
                 data: [...prevState.data, action.data]
             }
-        case "POST_GIG":
+        case "GET_GIG":
             return {
                 loading: false,
                 data: action.data
@@ -27,7 +27,7 @@ const gigReducer = (prevState = { loading: true, data: [] }, action) => {
             return {
                 loading: false,
                 data: prevState.data.filter((gig) => {
-                    return gig._id === action.id;
+                    return gig._id !== action.id;
                 })
             }
         default:
@@ -41,10 +41,9 @@ export const postGig = (inputs) => {
     return dispatch => {
         axios.post(gigUrl, inputs)
             .then((response) => {
-                console.log(response);
                 let { data } = response;
                 dispatch({
-                    type: "POST_ISSUE",
+                    type: "POST_GIG",
                     data
                 })
             })
@@ -55,7 +54,6 @@ export const getGig = () => {
     return dispatch => {
         axios.get(gigUrl)
             .then((response) => {
-                console.log(response);
                 let { data } = response;
                 dispatch({
                     type: "GET_GIG",

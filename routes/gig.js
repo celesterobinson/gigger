@@ -2,6 +2,7 @@ const express = require("express");
 const gigRoute = express.Router();
 const Gig = require("../models/gig");
 
+
 gigRoute.get("/", (req, res) => {
     Gig.find((err, gigs) => {
         if (err) return res.status(500).send(err);
@@ -10,10 +11,11 @@ gigRoute.get("/", (req, res) => {
 });
 
 gigRoute.post("/", (req, res) => {
+    console.log(req.body);
     const newGig = new Gig(req.body);
-    newGig.save((err) => {
+    newGig.save((err, savedGig) => {
         if (err) return res.status(500).send(err);
-        return res.send(newGig)
+        return res.status(201).send(savedGig);
     });
 });
 

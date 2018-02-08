@@ -3,36 +3,40 @@ const mongoose = require("mongoose");
 const gigSchema = new mongoose.Schema({
     bandName: {
         type: String,
-        required: true
+        required: false
     },
-    eventType: {
+    eventName: {
         type: String,
+        required: false
+    },
+    date: {
+        type: Date,
         required: false
     },
     street: {
         type: String,
-        required: true
+        required: false
     },
     city: {
         type: String,
-        required: true
+        required: false
     },
     state: {
         type: String,
-        required: true
+        required: false
     },
     zip: {
         type: String,
-        required: true
+        required: false
     },
 
     callTime: {
         type: String,
-        required: true
+        required: false
     },
     dress: {
         type: String,
-        required: true
+        required: false
     },
     equipment: {
         type: String,

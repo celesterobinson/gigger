@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import NewEvent from "./NewEvent";
 import "../styles/Header.css";
 
 function Header(props) {
@@ -12,8 +13,8 @@ function Header(props) {
                     <h4>The Musician's Calendar</h4>
                 </div>
             </div>
-            <div className="add-event-button">
-                <h1>+</h1>
+            <div>
+                <NewEvent />
             </div>
         </div>
     )
