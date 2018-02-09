@@ -70,9 +70,10 @@ class Form extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        let { _id, add, postGig, updateGig, clear, options } = this.props;
+        let { _id, add, postGig, updateGig, clear, options, submit } = this.props;
         if (add) {
             postGig(this.state.inputs);
+            submit()
         } else {
             updateGig(this.state.inputs, _id);
             options.toggle();
@@ -87,21 +88,21 @@ class Form extends Component {
         date = (moment(date).format("YYYY-MM-DD"));
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit}  >
                     <input onChange={this.handleChange} value={bandName} name="bandName" placeholder="Band Name" type="text" />
-                    <input onChange={this.handleChange} value={eventName} name="eventName" placeholder="Event Name" type="text" />
+                    <input onChange={this.handleChange} value={eventName} name="eventName" placeholder="Event Name(optional)" type="text" />
                     <input onChange={this.handleChange} value={date} name="date" placeholder="Date" type="date" />
                     <input onChange={this.handleChange} value={street} name="street" placeholder="Street" type="text" />
                     <input onChange={this.handleChange} value={city} name="city" placeholder="City" type="text" />
                     <input onChange={this.handleChange} value={state} name="state" placeholder="State" type="text" />
                     <input onChange={this.handleChange} value={zip} name="zip" placeholder="Zip" type="text" />
                     <input onChange={this.handleChange} value={callTime} name="callTime" placeholder="Call Time" type="text" />
-                    <input onChange={this.handleChange} value={dress} name="dress" placeholder="Dress" type="text" />
-                    <input onChange={this.handleChange} value={equipmentChecklist} name="equipmentChecklist" placeholder="Equipment Checklist" type="text" />
-                    <input onChange={this.handleChange} value={pay} name="pay" placeholder="Pay" type="text" />
-                    <textarea onChange={this.handleChange} value={travelDetails} name="travelDetails" placeholder="Travel Details" type="text" cols="30" rows="10"></textarea>
-                    <textarea onChange={this.handleChange} value={notes} name="notes" placeholder="Notes" type="text" cols="30" rows="10"></textarea>
-                    <button>Create Gig</button>
+                    <input onChange={this.handleChange} value={dress} name="dress" placeholder="Dress(optional)" type="text" />
+                    <input onChange={this.handleChange} value={equipmentChecklist} name="equipmentChecklist" placeholder="Equipment Checklist(optional)" type="text" />
+                    <input onChange={this.handleChange} value={pay} name="pay" placeholder="Pay(optional)" type="number" />
+                    <textarea onChange={this.handleChange} value={travelDetails} name="travelDetails" placeholder="Travel Details(optional)" type="text" cols="30" rows="10"></textarea>
+                    <textarea onChange={this.handleChange} value={notes} name="notes" placeholder="Notes(optional)" type="text" cols="30" rows="10"></textarea>
+                    <button>Submit</button>
                 </form>
             </div>
         )

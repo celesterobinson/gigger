@@ -1,0 +1,55 @@
+.backdrop-style {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    overflow: scroll;
+}
+.modal-dialog {
+    font-family: 'Alef', sans-serif;
+    border-radius: 10px;
+    
+}
+
+.modal-open .modal,.btn:focus { 
+    outline: none; 
+    
+}
+
+.modal-style {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: 10px;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #F45D01;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0;
+    color: white;
+    
+}
+.modal-body {
+    padding: 20px 0;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.modal-footer > button {
+    border-radius: 5px;
+}

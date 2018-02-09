@@ -1,0 +1,108 @@
+.gig {
+    color: white;
+    background-color: #00171F;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 10px auto;
+    height: 75px;
+    font-family: 'Alef', sans-serif;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+.gig:hover {
+    background-color: rgba(0, 23, 31, 0.8);
+    cursor: pointer;
+}
+
+.modal-container {
+    position: relative;
+  }
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+.date-time {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid white;
+    font-size: 18px;
+}
+.band-location {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid white;
+}
+
+.buttons > button {
+    width: 75%;
+    margin: 2px;
+    background-color: white;
+    border-radius: 2px;    
+}
+
+.cancel {
+    position: relative;
+    left: 400px;
+}
+@media(max-width: 506px) {
+    .details-title {
+        font-size: 18px;
+    }
+}
+
+.details-modal {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 600px;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: 10px;
+    top: 20vh;
+}
+
+.details-body {
+    padding: 45px;
+}
+
+@media(max-width: 766px) {
+    .band-location > h1 {
+        font-size: 20px;
+    }
+    .band-location > h3 {
+        font-size: 15px;
+    }
+    .date-time {
+        font-size: 12px;
+    }
+    .buttons > button {
+        font-size: 10px;
+    }
+    .gig {
+        width: 95%;
+    }
+}
+
+.edit-forms {
+    width: 500px;
+}

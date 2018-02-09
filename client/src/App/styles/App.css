@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 .calendar {
     width: 100%;
     padding: 10px 10%;
@@ -24,37 +23,47 @@
 @media(max-width: 494px) {
     .react-calendar__month-view__days {
         height: 45vh;
+        padding: 0;
+    }
+    .react-calendar {
+        height: 63vh;
+        padding: 10px;
     }
 }
 
-.react-calendar__month-view__days > button {
+.react-calendar__month-view__days>button {
     border-right: 0.5px solid white;
-    border-bottom: 0.5px solid white;    
+    border-bottom: 0.5px solid white;
     position: relative;
 }
 
 .react-calendar__month-view__weekdays__weekday {
-    border-bottom: 0.5px solid white;        
+    border-bottom: 0.5px solid white;
 }
 
-.react-calendar__month-view__days > button > time {
+.react-calendar__month-view__days>button>time {
     position: absolute;
     right: 0;
     top: 0;
     padding: 10px;
-    font-family: 'Alef', sans-serif!important;
+    font-family: 'Alef', sans-serif !important;
     font-size: 15px;
-    
+    font-weight: 900;
 }
 
 .react-calendar__navigation__label {
-    font-family: 'Alef', sans-serif!important;
+    font-family: 'Alef', sans-serif !important;
     font-size: 25px;
-    
+}
+
+@media(max-width: 494px) {
+    .react-calendar__navigation__label {
+        font-size: 20px;
+    }
 }
 
 .react-calendar__month-view__weekdays__weekday {
-    font-family: 'Alef', sans-serif!important;
+    font-family: 'Alef', sans-serif !important;
     font-size: 15px;
 }
 
@@ -62,7 +71,7 @@ i {
     border: solid black;
     border-width: 0 5px 5px 0;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
 }
 
 .down {
@@ -72,33 +81,42 @@ i {
 
 .arrow {
     display: flex;
-    justify-content: center;
-    height: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px;
     align-items: center;
-    margin-bottom: 30px;
     transition: background-color 1s;
+    font-size: 24px;
+    font-family: 'Alef', sans-serif;
+    padding: 10px;
+    background-color: white;
 }
 
 .arrow:hover {
-    background-color: rgb(216, 216, 216);
+    background-color: rgba(0, 23, 31, 0.4);
     cursor: pointer;
 }
 
-i {
-    position: relative;
-    top: -15px;
-}
-
 .react-calendar__tile--active {
-    background: #003459!important;
-
+    background: #003459 !important;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
     font-size: 15px;
 }
 
 .react-calendar__tile--hasActive {
     color: white;
-    background: #003459;    
+    background: #003459;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: white;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: #F45D01;
 }

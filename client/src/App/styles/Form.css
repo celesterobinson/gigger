@@ -1,8 +1,33 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
+}
+
+form:focus {
+    outline: none!important;
+    border: none!important;
+}
+
+form > input {
+    margin: 5px 0;
+    border-radius: 5px;
+    height: 30px;
+}
+
+form > button {
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0 0 0;
+}
+
+textarea {
+    height: 100px;
+    margin: 5px 0;
+    border-radius: 5px;
+    height: 60px;
+    resize: vertical;
 }
 @media(max-width: 650px) {
     form {

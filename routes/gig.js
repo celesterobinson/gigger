@@ -11,7 +11,6 @@ gigRoute.get("/", (req, res) => {
 });
 
 gigRoute.post("/", (req, res) => {
-    console.log(req.body);
     const newGig = new Gig(req.body);
     newGig.save((err, savedGig) => {
         if (err) return res.status(500).send(err);
@@ -28,7 +27,7 @@ gigRoute.get("/:id", (req, res) => {
 
 gigRoute.put("/:id", (req, res) => {
     Gig.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedGig) => {
-        if (err) return res.statusCode(500).send(err);
+        if (err) return res.status(500).send(err);
         return res.send(updatedGig);
     });
 });

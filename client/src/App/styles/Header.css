@@ -8,18 +8,6 @@
     font-family: 'Alef', sans-serif;
 }
 
-@media(max-width: 494px) {
-    .header {
-        height: 100px;
-    }
-    .titles {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        width: 90%;
-    }
-}
-
 .sub-title {
     padding: 16px 0 0 20px;
     font-family: helvetica, serif;
@@ -68,6 +56,21 @@
 
 .titles {
     width: 90%;
+}
+
+@media(max-width: 494px) {
+    .header {
+        height: 100px;
+        padding: 0;
+    }
+    .titles {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header > div {
+        padding: 0 20px;
+    }
 }
 
 
