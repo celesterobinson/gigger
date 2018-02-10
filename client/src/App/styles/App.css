@@ -3,70 +3,6 @@
     box-sizing: border-box;
 }
 
-.calendar {
-    width: 100%;
-    padding: 10px 10%;
-    border: none;
-    height: 80vh;
-    background-color: #00A8E8;
-}
-
-.react-calendar {
-    height: 80vh;
-}
-
-.react-calendar__month-view__days {
-    height: 60vh;
-    border-left: 0.5px solid white;
-}
-
-@media(max-width: 494px) {
-    .react-calendar__month-view__days {
-        height: 45vh;
-        padding: 0;
-    }
-    .react-calendar {
-        height: 63vh;
-        padding: 10px;
-    }
-}
-
-.react-calendar__month-view__days>button {
-    border-right: 0.5px solid white;
-    border-bottom: 0.5px solid white;
-    position: relative;
-}
-
-.react-calendar__month-view__weekdays__weekday {
-    border-bottom: 0.5px solid white;
-}
-
-.react-calendar__month-view__days>button>time {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 10px;
-    font-family: 'Alef', sans-serif !important;
-    font-size: 15px;
-    font-weight: 900;
-}
-
-.react-calendar__navigation__label {
-    font-family: 'Alef', sans-serif !important;
-    font-size: 25px;
-}
-
-@media(max-width: 494px) {
-    .react-calendar__navigation__label {
-        font-size: 20px;
-    }
-}
-
-.react-calendar__month-view__weekdays__weekday {
-    font-family: 'Alef', sans-serif !important;
-    font-size: 15px;
-}
-
 i {
     border: solid black;
     border-width: 0 5px 5px 0;
@@ -97,26 +33,3 @@ i {
     cursor: pointer;
 }
 
-.react-calendar__tile--active {
-    background: #003459 !important;
-}
-
-input,
-textarea,
-select,
-button {
-    font-size: 15px;
-}
-
-.react-calendar__tile--hasActive {
-    color: white;
-    background: #003459;
-}
-
-.react-calendar__month-view__days__day--neighboringMonth {
-    color: white;
-}
-
-.react-calendar__month-view__days__day--weekend {
-    color: #F45D01;
-}
