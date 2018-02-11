@@ -7,7 +7,7 @@ import "../styles/Form.css";
 class Form extends Component {
     constructor(props) {
         super(props);
-        let { modalDate,bandName, eventName, date, street, city, state, zip, callTime, dress, equipmentChecklist, pay, travelDetails, notes } = props;
+        let { modalDate, bandName, eventName, date, street, city, state, zip, callTime, dress, equipmentChecklist, pay, travelDetails, notes } = props;
         this.state = {
             inputs: {
                 bandName: bandName || "",

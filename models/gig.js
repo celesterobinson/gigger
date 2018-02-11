@@ -38,7 +38,7 @@ const gigSchema = new mongoose.Schema({
         type: String,
         required: false
     },
-    equipment: {
+    equipmentChecklist: {
         type: String,
         required: false
     },
