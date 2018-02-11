@@ -50,7 +50,7 @@ tileContent({date, view}) {
 
 ## Wireframes
 
-    Being an actively gigging musician, there is a ton of information that is difficult to keep track of. There have been many times where I have accidentally double booked myself, forgetting that I had already committed to a gig. This makes band leaders super angry. I have been wanting to build an app for a few years now that is a calendar specifically for musicians. In the future I might expand it to all arts-based freelancers. The goal of this app is to provide a more detailed platform for musicians. Event inputs will include info like call time, dress, pay, set-list, and event schedule.
+Being an actively gigging musician, there is a ton of information that is difficult to keep track of. There have been many times where I have accidentally double booked myself, forgetting that I had already committed to a gig. This makes band leaders super angry. I have been wanting to build an app for a few years now that is a calendar specifically for musicians. In the future I might expand it to all arts-based freelancers. The goal of this app is to provide a more detailed platform for musicians. Event inputs will include info like call time, dress, pay, set-list, and event schedule.
 
 MVP 
 * Full-stack
