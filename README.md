@@ -70,7 +70,7 @@ MVP
 
 User Story
 * Homepage should be view of calendar of the next month with upcoming event(s) underneath it
-* + button to add a new event
+* '+' button to add a new event
 * List of upcoming # of gigs.
 * When you click on a day/event, displays all info about that gig
 * Option there to delete or edit current gig
@@ -78,4 +78,8 @@ User Story
 ## Future Ideas
 
 * The equipment list should be a checklist, so that before a gig you can check off the items you need for that specific gig. Forgetting things is the WORST.
+
+* Send warning if two gigs are booked at the same time
+
+* Clicking on a day with a gig displays that day's gig info
 
