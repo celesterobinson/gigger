@@ -57,7 +57,13 @@
 .titles {
     width: 90%;
 }
-
+@media(max-width: 540px) {
+    .sub-title {
+        font-size: 12px;
+        position: relative;
+        top: 3px;
+    }
+}
 @media(max-width: 494px) {
     .header {
         height: 100px;
@@ -70,6 +76,9 @@
     }
     .header > div {
         padding: 0 20px;
+    }
+    .sub-title {
+        font-size: 1em;
     }
 }
 

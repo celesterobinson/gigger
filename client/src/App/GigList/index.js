@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getGig } from "../redux/gig";
 import Gig from "./Gig";
 import "../styles/GigList.css";
 
 class GigList extends Component {
     render() {
+        console.log(this.props)
         const { data } = this.props;
         const dataMap = data.sort((gig1, gig2)=>{
             let date1 = Date.parse(gig1.date);
@@ -22,4 +22,4 @@ class GigList extends Component {
     }
 }
 
-export default connect(state => state.gig, { getGig })(GigList);
+export default connect(state => state.gig, {})(GigList);

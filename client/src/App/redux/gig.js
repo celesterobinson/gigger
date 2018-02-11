@@ -7,7 +7,12 @@ const gigReducer = (prevState = { loading: true, data: [] }, action) => {
                 loading: false,
                 data: [...prevState.data, action.data]
             }
-        case "GET_GIG":
+        case "GET_GIG_START":
+            return {
+                ...prevState,
+                loading: true
+            }
+        case "GET_GIG_COMPLETE":
             return {
                 loading: false,
                 data: action.data
@@ -52,11 +57,14 @@ export const postGig = (inputs) => {
 
 export const getGig = () => {
     return dispatch => {
+        dispatch({
+            type: "GET_GIG_START"
+        });
         axios.get(gigUrl)
             .then((response) => {
                 let { data } = response;
                 dispatch({
-                    type: "GET_GIG",
+                    type: "GET_GIG_COMPLETE",
                     data
                 })
             })

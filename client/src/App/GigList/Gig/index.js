@@ -51,7 +51,7 @@ class Gig extends Component {
                                 </Modal.Header>
 
                                 <Modal.Body className="details-body">
-                                    <h2>{eventName}</h2>
+                                    <h2 style={{color: "#F45D01"}}>{eventName}</h2>
                                     <p><span style={style}>Address:</span> {street}, {city}, {state} {zip}</p>
                                     <p><span style={style}>Call Time:</span> {callTime}</p>
                                     <p><span style={style}>Dress:</span> {dress}</p>

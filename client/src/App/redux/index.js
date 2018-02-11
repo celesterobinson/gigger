@@ -5,7 +5,11 @@ import modal from "./modal";
 
 const rootReducer = (combineReducers({ gig, modal }));
 
-let store = createStore(rootReducer, applyMiddleware(thunk));
+let store = createStore(
+    rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    applyMiddleware(thunk)
+);
 
 store.subscribe(() => {
     console.log(store.getState());

@@ -38,23 +38,43 @@
 
 .react-calendar__month-view__days>button>time {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1px;
+    top: 1px;
     padding: 10px;
     font-family: 'Alef', sans-serif !important;
     font-size: 15px;
     font-weight: 900;
 }
+@media(max-width: 500px) {
+    .react-calendar__month-view__days > button > time {
+        right: 5px;
+        top: 1px;
+        padding: 0;
+        font-size: 12px;
+    }
+}
 
 .react-calendar__navigation__label {
     font-family: 'Alef', sans-serif !important;
     font-size: 25px;
+    border-radius: 10px;
 }
 
 @media(max-width: 494px) {
     .react-calendar__navigation__label {
         font-size: 20px;
     }
+}
+
+.react-calendar__navigation__next-button, 
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next2-button,
+.react-calendar__navigation__prev2-button {
+    border-radius: 10px;
+}
+
+.react-calendar__navigation__arrow {
+    font-size: 30px;
 }
 
 .react-calendar__month-view__weekdays__weekday {
