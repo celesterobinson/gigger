@@ -13,3 +13,18 @@ Provide a way for myself and other professional musicians to keep track of gig c
 
 ##### Gig List Web View
 ![gig-list](screenshots/upcoming-web.png)
+
+##### Add Gig Web View
+![add-gig](screenshots/add-gig-web.png)
+
+Main Mobile View | Gig List Mobile View | Add Gig Mobile View
+--- | --- | ---
+<img alt="main-mobile-view" src="screenshots/main-mobile.png" width="300" height="auto"> | <img alt="upcoming-mobile-view" src="screenshots/upcoming-mobile.png" width="300" height="auto"> | <img alt="add-gig-mobile-view" src="screenshots/add-gig-mobile.png" width="300" height="auto">
+
+## Links
+
+Github Repository: https://github.com/celesterobinson/gigger
+
+## Technologies Used
+* HTML, CSS, JavaScript, React, Redux + Thunk, Axios
+* Node, Expess + Middleware, MongoDB, Mongoose
