@@ -4,14 +4,14 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
-    "moment": "^2.20.1",
-    "react": "^16.2.0",
-    "react-bootstrap": "^0.32.1",
-    "react-calendar": "^2.13.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.0",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^0.32.4",
+    "react-calendar": "^2.18.1",
+    "react-dom": "^16.8.6",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.0.1",
     "redux": "^3.7.2"
   },
   "proxy": "http://localhost:8080",
@@ -26,5 +26,17 @@
   "devDependencies": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
